@@ -1,0 +1,6 @@
+services:
+  k6:
+    image: grafana/k6:latest
+    command: run /hello.js
+    volumes:
+      - ./hello.js:/hello.js
